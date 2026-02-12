@@ -1,0 +1,52 @@
+<!-- header.html -->
+<!-- TALES brand · Offcanvas mobile navigation -->
+
+<nav class="navbar navbar-dark bg-dark py-3">
+    <div class="container">
+        <!-- Brand with Logo -->
+        <a class="navbar-brand fs-3 fw-bold text-white d-flex align-items-center" href="index.html">
+            <img src="tales.jpg" alt="Tales Logo" style="height: 40px; width: auto; margin-right: 12px; border-radius: 6px;">
+            TALES
+        </a>
+        
+        <!-- Desktop Navigation - hidden on mobile -->
+        <div class="d-none d-md-flex ms-auto">
+            <a href="index.html" class="nav-link text-white px-3">Home</a>
+            <a href="work.html" class="nav-link text-white px-3">Work</a>
+            <a href="about.html" class="nav-link text-white px-3">About</a>
+            <a href="contact.html" class="nav-link text-white px-3">Contact</a>
+        </div>
+
+        <!-- Mobile offcanvas trigger -->
+        <button class="navbar-toggler d-md-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+                <div class="d-flex align-items-center">
+                    <img src="tales.jpg" alt="Tales Logo" style="height: 36px; width: auto; margin-right: 12px; border-radius: 6px;">
+                    <h5 class="offcanvas-title text-white mb-0">TALES</h5>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5 py-3" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5 py-3" href="work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5 py-3" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5 py-3" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
